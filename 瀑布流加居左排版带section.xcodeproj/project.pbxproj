@@ -12,6 +12,11 @@
 		9668FF9D1E827400001D9236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9668FF9B1E827400001D9236 /* Main.storyboard */; };
 		9668FF9F1E827400001D9236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9668FF9E1E827400001D9236 /* Assets.xcassets */; };
 		9668FFA21E827400001D9236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9668FFA01E827400001D9236 /* LaunchScreen.storyboard */; };
+		9668FFAA1E82744E001D9236 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668FFA91E82744E001D9236 /* WaterfallLayout.swift */; };
+		9668FFAE1E8274A3001D9236 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668FFAC1E8274A3001D9236 /* CollectionReusableView.swift */; };
+		9668FFAF1E8274A3001D9236 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9668FFAD1E8274A3001D9236 /* CollectionReusableView.xib */; };
+		9668FFB21E8274D8001D9236 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668FFB01E8274D8001D9236 /* CollectionViewController.swift */; };
+		9668FFB31E8274D8001D9236 /* LeftCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668FFB11E8274D8001D9236 /* LeftCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		9668FF9E1E827400001D9236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9668FFA11E827400001D9236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9668FFA31E827400001D9236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9668FFA91E82744E001D9236 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		9668FFAC1E8274A3001D9236 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		9668FFAD1E8274A3001D9236 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		9668FFB01E8274D8001D9236 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		9668FFB11E8274D8001D9236 /* LeftCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,25 @@
 			children = (
 				9668FF971E827400001D9236 /* AppDelegate.swift */,
 				9668FF991E827400001D9236 /* ViewController.swift */,
+				9668FFAB1E827496001D9236 /* view */,
 				9668FF9B1E827400001D9236 /* Main.storyboard */,
 				9668FF9E1E827400001D9236 /* Assets.xcassets */,
 				9668FFA01E827400001D9236 /* LaunchScreen.storyboard */,
 				9668FFA31E827400001D9236 /* Info.plist */,
+				9668FFA91E82744E001D9236 /* WaterfallLayout.swift */,
 			);
 			path = "瀑布流加居左排版带section";
+			sourceTree = "<group>";
+		};
+		9668FFAB1E827496001D9236 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9668FFB01E8274D8001D9236 /* CollectionViewController.swift */,
+				9668FFB11E8274D8001D9236 /* LeftCollectionViewController.swift */,
+				9668FFAC1E8274A3001D9236 /* CollectionReusableView.swift */,
+				9668FFAD1E8274A3001D9236 /* CollectionReusableView.xib */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9668FFA21E827400001D9236 /* LaunchScreen.storyboard in Resources */,
+				9668FFAF1E8274A3001D9236 /* CollectionReusableView.xib in Resources */,
 				9668FF9F1E827400001D9236 /* Assets.xcassets in Resources */,
 				9668FF9D1E827400001D9236 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9668FF9A1E827400001D9236 /* ViewController.swift in Sources */,
+				9668FFAE1E8274A3001D9236 /* CollectionReusableView.swift in Sources */,
+				9668FFAA1E82744E001D9236 /* WaterfallLayout.swift in Sources */,
 				9668FF981E827400001D9236 /* AppDelegate.swift in Sources */,
+				9668FFB21E8274D8001D9236 /* CollectionViewController.swift in Sources */,
+				9668FFB31E8274D8001D9236 /* LeftCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
