@@ -105,6 +105,7 @@ class WaterfallLayout: UICollectionViewFlowLayout {
     
     override var collectionViewContentSize: CGSize {
         let size = super.collectionViewContentSize
+        maxY = max(size.height, maxY)
         return CGSize(width: size.width, height: maxY)
     }
     
@@ -216,6 +217,7 @@ class LeftAlignLayout: UICollectionViewFlowLayout {
     
     override var collectionViewContentSize: CGSize {
         let size = super.collectionViewContentSize
+        maxY = max(size.height, maxY)
         return CGSize(width: size.width, height: maxY)
     }
     
